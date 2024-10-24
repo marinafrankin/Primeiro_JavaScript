@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="titulo">Oi, mundo dos Fatecquinhos</h1>
+    <label for="texto">Digite algo: </label>
+    <input type="text" id="testo">
+    <button type="button" id="escrever">Escrever na tela</button>
+
+    <br><br>
+
+    <label for="cor">Digite uma cor em inglês:</label>
+    <input type="text" id="cor">
+    <!-- com onclick () podemos chamar funcões para quando o elemento for clicado -->
+    <button type="button" onclick="mudarCor()">Mudar Cor</button>
+
+    <br><br>
+
+    <script>
+        //Para pegar um elemento (tag) podemos utilizar seu id
+        let titulo = document.getElementById('titulo');
+        console.log(titulo); //Ver tudo que o elemento possui
+        console.log("Saber qual tag é do elemento:", titulo.nodeName);
+        console.log("Saber o que tem dentro do elemento: ", titulo.textContent);
+        //Alter o texto do elemnto
+        titulo.innerHTML = "Eu mudei !!!"; 
+        console.log("Saber o que tem dentro do elemento (2):  ", titulo.textContent);
+
+        //Para acionar botões, criamos funções
+        function mudarCor(){
+            let campoCor = document.getElementById('cor');
+            let titulo = document.getElementById('titulo');
+            
+            //A propriedade style permite altera todo o css do elemento
+            titulo.style.color = campoCor.value;
+            titulo.style.backgroundColor = "#e9e9e9";
+            titulo.style.fontSize = "50px";
+
+        
+        }
+
+    </script>
+    
+    <script src="js/funcoes.js"></script>
+</body>
+</html>

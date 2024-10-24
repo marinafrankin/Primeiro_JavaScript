@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    
+    <h1>Oi, mundo de JavaScript!</h1>
+
+    <a href="funcoes.html">Ir para funções</a><br><br>
+
+    <script>
+        //Podemos utilizar 3 formas para exibir conteúdo com js
+        //Exibir um alerta na página (nunca mais use isso)
+        //alert("Olá mundo");
+
+        //Exisbir no console no navegador (fiz)
+        console.log("Oi mundo, bom dia");
+
+        //Escrever direto na página (tem várias formas...)
+        document.write("<b> Oi mundo, boa tarde </b>")
+
+        //Só usa no final do documento
+
+        //Variaveis "não possuem" tipos no js, são implicitos
+        //Para declarar usamos var, let ou const
+        var nome = "Marina"; //Var é a forma antiga, permite diplicidade
+        let idade = "19"; // Let não permite que o mesmo nome seja utilizado
+        const altura = "1.55"; // Const não permite alterar o valor depois de criada
+
+        //Como tipos temos: string, number, boolean;
+        //Strig pode ser declarado com aspas "", apóstrofo '', ou crases ``
+        let materi = "desenvolvimento web";
+        let sigla = 'DW 1'; //Mais utilizado hoje 
+        let faculdade = `Fatec`; //Permite a inclusão de variavel no texto
+
+        //Numeros são number, podendo ser sub divididos em:
+        //Inteiro (int)
+        let ano = 2024;
+
+        //Flutuante ou com virgula ou decimais (float)
+        let valor = 84.4; // Usamos o padrão americano, então . separa casas decimais
+
+        //Booleano: Verdadeiro (true ou 1), Falso (false ou 0);
+        let aluno = true;
+
+        aluno = "Claro que sou eu";
+
+        //Concatenação
+        //Usando o +
+        console.log("Oi, meu nome é " + nome + " tendo" + idade + " anos");
+
+        //Usando a crase com $()
+        let texto = `<br> Estamos em ${ano} estudando ${sigla} na ${faculdade}!`;
+        document.write(texto)
+    </script> 
+</body>
+</html>
